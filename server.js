@@ -15,19 +15,19 @@ app.use('/images', express.static(path.join(__dirname, 'images'))); // Serve sta
 
 const fruitsApi = {
     "apple": {
-        "imgSrc": "/images/apple.webp",
+        "imgSrc": "/fruit-project/images/apple.webp",
         "calories": 322,
         "protein": "10g",
         "sugar": "2g"
     },
     "durian": {
-        "imgSrc": "/images/durian.jpg",
+        "imgSrc": "/fruit-project/images/durian.jpg",
         "calories": 563,
         "protein": "22g",
         "sugar": "5g"
     },
     "banana": {
-        "imgSrc": "/images/banana.jpg",
+        "imgSrc": "/fruit-project/images/banana.jpg",
         "calories": 153,
         "protein": "4g",
         "sugar": "344g"

@@ -3,27 +3,31 @@
 
 
 const express = require('express')
+const path = require('path'); //serve up static files
 const app = express()
 const cors = require('cors')
 const PORT = 8000
 
 app.use(cors()) //security for cross origin resource sharing 
+app.use('/images', express.static(path.join(__dirname, 'images'))); // Serve static images from the "images" folder
+
+
 
 const fruitsApi = {
     "apple": {
-        "ImgSrc":"/images/apple.webp",
+        "imgSrc": "/images/apple.webp",
         "calories": 322,
         "protein": "10g",
         "sugar": "2g"
     },
     "durian": {
-        "ImgSrc":"/images/durian.jpg",
+        "imgSrc": "/images/durian.jpg",
         "calories": 563,
         "protein": "22g",
         "sugar": "5g"
     },
     "banana": {
-        "ImgSrc":"/images/banana.jpg",
+        "imgSrc": "/images/banana.jpg",
         "calories": 153,
         "protein": "4g",
         "sugar": "344g"

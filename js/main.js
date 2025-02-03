@@ -15,6 +15,7 @@ async function searchFruit() {
         }
         const data = await res.json()
         console.log(data)
+        document.querySelector('#fruitImage').src = data.imgSrc
         document.querySelector('#calories').innerText = data.calories //the values change when using innerText
         document.querySelector('#protein').innerText = data.protein
         document.querySelector('#sugar').innerText = data.sugar

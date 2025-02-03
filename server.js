@@ -11,16 +11,19 @@ app.use(cors()) //security for cross origin resource sharing
 
 const fruitsApi = {
     "apple": {
+        "ImgSrc":"/images/apple.webp",
         "calories": 322,
         "protein": "10g",
         "sugar": "2g"
     },
     "durian": {
+        "ImgSrc":"/images/durian.jpg",
         "calories": 563,
         "protein": "22g",
         "sugar": "5g"
     },
     "banana": {
+        "ImgSrc":"/images/banana.jpg",
         "calories": 153,
         "protein": "4g",
         "sugar": "344g"

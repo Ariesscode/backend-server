@@ -15,6 +15,13 @@ async function searchFruit() {
         }
         const data = await res.json()
         console.log(data)
+        document.querySelector('#calories').innerText = data.calories //the values change when using innerText
+        document.querySelector('#protein').innerText = data.protein
+        document.querySelector('#sugar').innerText = data.sugar
+
+        document.querySelector('#tracker').value = ''; // clear input field
+
+
     } catch(error){
         console.error(`${error}`)
     }
